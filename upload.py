@@ -3,9 +3,9 @@ import requests, os
 # the path is described remote server
 def upload(path, f):
     data = {
-        'OSSAccessKeyId': 'LTAIwasl36taM034',
-        'policy': 'eyJleHBpcmF0aW9uIjoiMjExNS0wMS0yN1QxMDo1NjoxOVoiLCJjb25kaXRpb25zIjpbWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsIDAsIDEwNDg1NzZdXX0=',
-        'Signature': 'rLe0oddE+s2QYSPn6Ym9c3ZLc9w=',
+        'OSSAccessKeyId': 'OSSAccessKeyId',
+        'policy': 'policy',
+        'Signature': 'Signature',
         'key': os.path.join(path, '${filename}'),
         'success_action_redirect': 'http://conw.net',
         'success_action_status': '201',
@@ -30,5 +30,5 @@ def main(localpath):
 
 if __name__ == '__main__':
     #main('/root/video')
-    main('/var/www/html/video/11000')
+    main('/var/www/html/')
 
